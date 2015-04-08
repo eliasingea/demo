@@ -1,0 +1,28 @@
+dependencies:
+- rpm:
+  - python${py3}
+- if $venv:
+  - rpm:
+    - python-virtualenv
+- else:
+  - rpm:
+    - python-flask
+    - python-flask-sqlalchemy
+    - python-flask-wtf
+    - python-flask-script
+- rpm:
+  - vim-nerdtree
+  - vim-enhanced
+  - vim-command-t
+  - vim-X11
+  - ctags
+  - vim-taglist
+devassistant_version: 0.10.3
+original_kwargs:
+  github: eliasingea
+  name: /home/eingea/demo
+  venv: ''
+  vim: true
+project_type:
+- python
+- flask
